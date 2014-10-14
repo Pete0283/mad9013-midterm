@@ -1,0 +1,224 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	padding:0;
+	margin:0;
+    box-sizing: border-box;
+}	
+body{
+	font-size: 62.5%;
+    background-color: #CC3900:
+}
+h1, h2, h3{
+	font-weight: 700;	
+	padding: 10px 20px;
+	color: #000;
+}
+h1{
+	font-size: 3.6rem;	
+	font-family: 'Cedarville Cursive', cursive;
+    background-color: #CC3900;
+}
+h2{
+	font-size: 3.0rem;	
+	font-family: serif;
+}
+h3{
+	font-size: 2.4rem;
+	font-family: 'PT Serif Caption', serif;
+	color: #494949;	
+}
+p, li, a{
+	font-weight: 400;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: white;		
+}
+p{
+	padding: 10px 20px;
+	font-size: 1.4rem;
+}
+li{
+	font-size: 1.4rem;
+}
+ol li{
+	padding: 6px 20px;
+	margin-left: 20px;
+	list-style-position:inside;
+}
+a{
+	font-size: 1.4rem;
+}	
+
+/***********************************
+					Layout
+***********************************/
+.wrapper{
+    background-color: #7F3A26; 
+}
+.masthead{
+	
+}
+.nav{
+    float:left;
+}
+.navbar{
+    background-color: #FF734C;
+}
+.main{
+    background-color: #A32300;
+    padding: 2px;
+    margin: 2px;
+}
+.two{
+    background-color: #CC2C00;
+    padding: 2px;
+    margin: 2px;
+}
+
+.three{
+    background-color: #FF734C;
+    padding: 2px;
+    margin: 2px;
+}
+
+.sidebar{
+	
+}
+.footer{
+	
+}
+
+/***********************************
+					Masthead
+***********************************/
+.masthead h1{
+	padding: 30px 20px;
+}
+
+/***********************************
+					Navigation
+***********************************/
+
+.navbar li{
+	float:left;	
+	width: 25%;  /* 960/4 = 240  works if the layout is 960*/
+	list-style:none;
+}
+.navbar a{
+	display: block;	
+	padding: 8px 16px;
+	text-align: center;
+	text-decoration: none;
+	color: #333;
+	background-color: #e4e4e4;
+}
+.navbar a:visited,
+.navbar a:hover,
+.navbar a:active,
+.navbar a:focus{
+	color: #fff;
+	background-color: #333;
+}
+
+/***********************************
+					Content
+***********************************/
+.sidebar p{
+	font-size: 1.4rem;	
+}
+.instructions{
+	color: #C30;	
+}
+/***********************************
+					Footer
+***********************************/
+.footer p{
+	padding: 20px 20px;
+	font-size: 1.2rem;
+	color: #999;	
+	background-color: #e4e4e4;
+    clear:both;
+}
+
+/******************************
+Media Queries
+*****************************/
+
+@media all and (min-width: 1080px){
+    .nav {
+        width: 25%;
+        margin: 5px;
+    }
+    .nav li {
+        width: 100%;
+    }
+    .main {
+        width: 24%;
+        float: left;
+    }
+    .two {
+        width: 24%;
+        float: left;
+    }
+    .three {
+        width: 24%;
+        float: left;
+    }
+}
+
+@media all and (min-width: 720px) and (max-width:1079px){
+    .nav {
+        width: 100%;
+    }
+    .main {
+        width: 50%;
+        float: left;
+    }
+    .two {
+        width: 24%;
+        float: left;
+    }
+    .three {
+        width: 24%;
+        float: left;
+    }
+}
+@media all and (min-width: 500px) and (max-width:719px){
+    .nav {
+        width: 100%;
+    }
+    .main {
+        width: 99%;
+        float: left;
+    }
+    .two {
+        width: 49%;
+        float: left;
+    }
+    .three {
+        width: 49%;
+        float: left;
+    }
+}
+@media all and (max-width: 499px) and (min-width: 1px){
+    .nav {
+        width: 100%;
+    }
+    .nav li {
+        width: 50%;
+    }
+    .main {
+        width: 100%;
+        float: left;
+    }
+    .two {
+        width: 100%;
+        float: left;
+    }
+    .three {
+        width: 100%;
+        float: left;
+    }
+}
+        
